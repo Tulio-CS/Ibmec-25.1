@@ -1,1 +1,3 @@
 from .derivacaoNumerica import PrimeiraDerivadaCentrada, SegundaDerivadaCentrada, TerceiraDerivadaCentrada, QuartaDerivadaCentrada, PrimeiraDerivadaProgressiva, SegundaDerivadaProgressiva, TerceiraDerivadaProgressiva, QuartaDerivadaProgressiva, PrimeiraDerivadaRegressiva, SegundaDerivadaRegressiva, TerceiraDerivadaRegressiva, QuartaDerivadaRegressiva
+
+from .raizes import bissecao
