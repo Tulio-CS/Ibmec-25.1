@@ -1,20 +1,21 @@
 from numpy import linspace
 from matplotlib.pyplot import figure , plot, ylim, show,legend
+from math import e
 
-f=lambda x: x**3-9*x-5
+f=lambda x: (1- e**(-0.4*x))-0.25
 
 # Creating array of x
-x=linspace(-4,4,50)
+x=linspace(0.1,10,50)
 
 # Drawing function
 figure(1,dpi=200)
 plot(x,f(x))
-ylim(-19,10)
+ylim(0,5)
 plot([-4,4],[0,0],'k--')
 
 # Selecting false positions x1 and x2
-x1=-3
-x2=-1
+x1=0.1
+x2=10
 
 # Evaluating corresponding y1 and y2
 y1=f(x1)
